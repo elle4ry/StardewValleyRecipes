@@ -6,5 +6,7 @@ export interface BoostInter{
 
 export const bonus: BoostInter[] = [
     { description: "Aumenta a Defesa",effectDuration: 5},
+    { description: "Cultivo",effectDuration: 5},
+    { description: "Energia Máxima",effectDuration: 7},
     { description: "N/A",effectDuration: 0}
 ]

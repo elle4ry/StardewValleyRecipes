@@ -20,7 +20,7 @@ routes.get('/recipes/:name', (req, res) => {
         res.status(404).json({ message: 'Receita não encontrada' });
     }
 });
-routes.get('/recipesIngred/:ingredients', (req, res) => {
+routes.get('/recipes/ingred/:ingredients', (req, res) => {
     const { ingredients } = req.params;
     const foundRecipes = receitas_1.recipesData.filter(recipe => recipe.ingredients.some(i => i.name.toLowerCase() === ingredients.toLowerCase()));
     if (foundRecipes.length > 0) {
@@ -28,6 +28,16 @@ routes.get('/recipesIngred/:ingredients', (req, res) => {
     }
     else {
         res.status(404).json({ message: 'Nenhuma receita com esse ingrediente encontrada' });
+    }
+});
+routes.get('/recipes/character/:character', (req, res) => {
+    const { character } = req.params;
+    const foundRecipes = receitas_1.recipesData.filter(recipe => recipe.personagemQAma.some(c => c.namePerso.toLowerCase() === character.toLowerCase()));
+    if (foundRecipes.length > 0) {
+        res.json(foundRecipes);
+    }
+    else {
+        res.status(404).json({ message: 'Esse personagem não gosta de nenhuma receita' });
     }
 });
 routes.get('/ingredients/:name', (req, res) => {

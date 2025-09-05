@@ -3,8 +3,13 @@ export interface personagemQAmaInter {
   }
   
   export const personagemQAma: personagemQAmaInter[] = [
-    {
-      namePerso: "Harvey"
-    }
+    {namePerso: "N/A"},
+    {namePerso: "Harvey"},
+    {namePerso: "Leah"},
+    {namePerso: "Lewis"},
+    {namePerso: "Pam"},
+    {namePerso: "Jodi"},
+    {namePerso: "Alex"},
+    {namePerso: "Maru"}
   ];
   
