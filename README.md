@@ -19,6 +19,9 @@ Retorna todas as receitas.
 GET /recipes/:ingredient
 Retorna receitas que contenham o ingrediente informado.
 
+GET /recipes/character/:nomedopersonagem
+Retorna todas as receitas que aquele personagem ama
+
 ### Rotas ingredientes
 GET /ingredients/
 Retorna todos os ingredientes.
