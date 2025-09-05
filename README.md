@@ -1,4 +1,4 @@
-# **API Stardew Valley Recipes **🐣
+# **API Stardew Valley Recipes**🐣
 
 Este projeto foi criado a partir da necessidade de estudar APIs e da paixão pelo jogo Stardew Valley 🌾.
 O objetivo é disponibilizar uma API que auxilia jogadores a explorar as receitas do jogo, mostrando seus ingredientes, efeitos (boosts) e preferências de NPCs.
