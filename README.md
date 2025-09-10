@@ -13,21 +13,21 @@ O servidor estará disponível em:
 
 ## **Rotas da API** 🌻
 ### Rotas receitas
-GET /recipes/
+GET /api/recipes/
 Retorna todas as receitas.
 
-GET /recipes/:ingredient
+GET /api/recipesIngred/
 Retorna receitas que contenham o ingrediente informado.
 
-GET /recipes/character/:nomedopersonagem
+GET /api/recipes/character/:nomedopersonagem
 Retorna todas as receitas que aquele personagem ama
 
 ### Rotas ingredientes
-GET /ingredients/
+GET /api/ingredients/
 Retorna todos os ingredientes.
 
 ### Rotas personagens
-GET /character/
+GET /api/character/
 Lista todos os personagens.
 
 👩‍🌾**Autora: Aryelle**
